@@ -1,0 +1,23 @@
+doctype html
+html(lang="ko")
+	head
+		title 회원가입
+		meta(charset='utf-8')
+		script(src='/js/register.js' defer)
+		script(src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js")
+		link(rel="stylesheet" href="css/register.css")
+	body
+		div(class="register-page")
+			form(class="form")
+				input(id="id" type="text" placeholder="아이디")
+				br
+				input(id="name" type="text" placeholder="이름")
+				br
+				input(id="password" type="password" placeholder="비밀번호")
+				br
+				input(id="confirm-password" type="password" placeholder="비밀번호 확인")
+				br
+				p(id="button") SIGN UP
+				br
+				p(class="message") Already registered?
+					a(href="/login") login
