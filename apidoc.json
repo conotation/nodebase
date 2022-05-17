@@ -1,0 +1,11 @@
+{
+	"name": "nodebase",
+	"version": "1.0.0",
+	"description": "nodebase apidoc 테스트",
+	"title": "nodebase",
+	"url": "_",
+	"sampleUrl": null,
+	"order": [
+		"Common", "Auth", "Items", "Stores"
+	]
+}
