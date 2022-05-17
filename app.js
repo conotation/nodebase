@@ -11,7 +11,7 @@ const root = require('./src/routes');
 const reqPre = (req, res, next) => {
 	var fUrl = req.protocol + "://" + req.get('host') + req.originalUrl;
 	var now = new Date()
-	console.log(`${now.toISOString()} : ${fUrl}`);
+	console.log(`${req.method + " => "}${now.toISOString()} : ${fUrl}`);
 	next();
 }
 
